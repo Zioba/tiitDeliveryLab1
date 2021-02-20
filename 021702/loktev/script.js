@@ -152,4 +152,4 @@ function tests()
   console.log("Expected output: undefined, got: " + result);
   if(checktestresult(result, undefined)) console.log("Test passed\n")
   else console.log("Test failed\n");
-}
+} \n
