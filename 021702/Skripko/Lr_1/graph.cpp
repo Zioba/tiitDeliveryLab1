@@ -1,26 +1,7 @@
-#ifndef GRAFF_H
-#define GRAFF_H
-
-#include <iostream>
-using namespace std;
-class Graff {
-private:
-
-	int counter_id = 0;
-	int quantity_elem = 0;
-	struct Elem {
-		int data;
-		int id;
-		bool for_search = false;
-		int quantity_arcs = 0;
-		Elem** arcs = NULL;
-	};
+#include "graph.h"
 
 
-	Elem* elem;
-
-
-	bool next_search(Elem** neighbors, int data_to, int quantity_neighbors)
+	bool Graph::next_search(Elem** neighbors, int data_to, int quantity_neighbors)
 	{
 		Elem** new_neighbors = nullptr;
 		int quantity_new_neighbors = 0;
@@ -84,13 +65,8 @@ private:
 		}
 	}
 
-public:
-	
-	Graff() {
-		elem = new Elem[1];
-	}
-
-	void add_elem(int add) {
+	void Graph::add_elem(int add)
+	{
 		quantity_elem++;
 		counter_id++;
 		if (quantity_elem == 1) {
@@ -98,7 +74,7 @@ public:
 			add_elem.data = add;
 			add_elem.id = counter_id;
 			elem[quantity_elem - 1] = add_elem;
-		}
+			}
 		else {
 			Elem* past_elem = elem;;
 			elem = new Elem[quantity_elem];
@@ -113,29 +89,30 @@ public:
 		}
 	}
 
-	void del_elem(int num_id) {
+	void Graph::del_elem(int num_id)
+	{
 		if (num_id > counter_id) {
-			cout << "There is no element with this id"<< endl;
+			cout << "There is no element with this id" << endl;
 		}
 		else {
-		int del_num;
-		bool already_deleted = false;
-		for (int num_elem = 0; num_elem <= quantity_elem; num_elem++) {
-			if (num_elem == quantity_elem) {
-				cout << "You have already deleted this elem" << endl;;
-				already_deleted = true;
-				break;
+			int del_num;
+			bool already_deleted = false;
+			for (int num_elem = 0; num_elem <= quantity_elem; num_elem++) {
+				if (num_elem == quantity_elem) {
+					cout << "You have already deleted this elem" << endl;;
+					already_deleted = true;
+					break;
+				}
+				else if (elem[num_elem].id == num_id) {
+					del_num = num_elem;
+					break;
+				}
 			}
-			else if (elem[num_elem].id == num_id) {
-				del_num = num_elem;
-				break;
-			}
-		}
-		if (already_deleted) {
+			if (already_deleted) {
 
-		}
-		else {
-			
+			}
+			else {
+
 
 				for (int num_elem = 0; num_elem < quantity_elem; num_elem++) {
 
@@ -164,10 +141,11 @@ public:
 		}
 	}
 
-	void print_graph() {
+	void Graph::print_graph_elem()
+	{
 		for (int num_elem = 0; num_elem < quantity_elem; num_elem++)
 		{
-			
+
 			if (num_elem == quantity_elem - 1) {
 				cout << this->elem[num_elem].data;
 			}
@@ -178,7 +156,8 @@ public:
 		cout << endl;
 	}
 
-	void out_elem_id_according_data(int data) {
+	void Graph::print_graph_elem_id_according_data(int data)
+	{
 		for (int num_elem = 0; num_elem < quantity_elem; num_elem++) {
 			if (elem[num_elem].data == data) {
 				cout << elem[num_elem].id << " ";
@@ -187,7 +166,8 @@ public:
 		cout << endl;
 	}
 
-	void add_arcs(int num_id_from, int num_id_to) {
+	void Graph::add_arcs(int num_id_from, int num_id_to)
+	{
 		int from;
 		int to;
 		int for_check = 2;
@@ -234,7 +214,8 @@ public:
 		}
 	}
 
-	void del_arcs(int num_id_from, int num_id_to) {
+	void Graph::del_arcs(int num_id_from, int num_id_to)
+	{
 		int from;
 		int for_check = 2;
 		for (int num_elem = 0; num_elem < quantity_elem; num_elem++) {
@@ -294,8 +275,9 @@ public:
 		}
 	}
 
-	void out_arcs(int id_from) {
-		for (int from = 0;  ; from++) {
+	void Graph::print_graph_elem_arcs(int id_from)
+	{
+		for (int from = 0; ; from++) {
 			if (from == quantity_elem) {
 				cout << "There is no element with this id" << endl;
 				break;
@@ -303,22 +285,23 @@ public:
 			else if (elem[from].id == id_from) {
 				for (int num_arcs = 0; num_arcs < elem[from].quantity_arcs; num_arcs++)
 				{
-						if (num_arcs == elem[from].quantity_arcs - 1) {
-							cout << elem[from].arcs[num_arcs]->data;
-						}
-						else {
-							cout << elem[from].arcs[num_arcs]->data << " ";
-						}
-					
+					if (num_arcs == elem[from].quantity_arcs - 1) {
+						cout << elem[from].arcs[num_arcs]->data;
+					}
+					else {
+						cout << elem[from].arcs[num_arcs]->data << " ";
+					}
+
 				}
 				cout << endl;
 				break;
 			}
-			 
+
 		}
 	}
 
-	void search_data_to_data(int data_from, int data_to) {
+	void Graph::search_data_to_data(int data_from, int data_to)
+	{
 		Elem** neighbors;
 		int from = -1;
 		bool for_check = false;
@@ -341,7 +324,7 @@ public:
 				cout << endl << "Found " << data_to << " from this " << data_from << endl;
 			}
 			else if (elem[from].quantity_arcs == 0) {
-				cout << endl << "Can't found " << data_to << " from this " << data_from<<" because this " << data_from << " don't have arcs"<< endl;
+				cout << endl << "Can't found " << data_to << " from this " << data_from << " because this " << data_from << " don't have arcs" << endl;
 			}
 			else {
 				neighbors = new Elem * [elem[from].quantity_arcs];
@@ -367,7 +350,7 @@ public:
 						cout << endl;
 					}
 					else {
-						cout <<" because this "<< data_to << " doesn't exist" << endl;
+						cout << " because this " << data_to << " doesn't exist" << endl;
 					}
 				}
 			}
@@ -378,7 +361,8 @@ public:
 
 	}
 
-	void search_id_to_data(int num_id_from, int data_to) {
+	void Graph::search_id_to_data(int num_id_from, int data_to)
+	{
 		Elem** neighbors;
 		int data_from;
 		int from = -1;
@@ -439,16 +423,3 @@ public:
 		}
 
 	}
-
-
-	~Graff() {
-		for (int num_arcs = 0; num_arcs < quantity_elem; num_arcs++) {
-			if (elem[num_arcs].arcs != NULL) {
-				delete[] elem[num_arcs].arcs;
-			}
-		}
-		delete[] elem;
-	}
-};
-
-#endif
