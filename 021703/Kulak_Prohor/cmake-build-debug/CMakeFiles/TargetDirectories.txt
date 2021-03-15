@@ -1,3 +1,0 @@
-C:/Kulak_Prohor/cmake-build-debug/CMakeFiles/tiit1_2_main.dir
-C:/Kulak_Prohor/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Kulak_Prohor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
