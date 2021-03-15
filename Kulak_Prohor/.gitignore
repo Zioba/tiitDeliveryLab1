@@ -1,0 +1,4 @@
+cmake-build-debug/
+doctest.h
+proverka.cpp
+CMakeLists.txt
