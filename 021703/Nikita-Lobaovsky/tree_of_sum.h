@@ -1,8 +1,8 @@
 #pragma once
-struct node //вершина дерева отрезков
+struct node 
 {
-	int summa, LeftPos, RightPos, add_value; //summa - отвечает за сумму, LeftPos - левая граница, RightPos - правая граница
-	node* Left, * Right; //Left - левое поддерево, Right - правое
+	int summa, LeftPos, RightPos, add_value;// summa - is responsible for the amount, LeftPos - left border, RightPos - right border 
+	node* Left, * Right; // Left - left subtree, Right - right 
 };
 
 node* build(std::vector<int>&, int, int);
