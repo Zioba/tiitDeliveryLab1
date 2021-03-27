@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 struct node 
 {
 	int summa, LeftPos, RightPos, add_value;// summa - is responsible for the amount, LeftPos - left border, RightPos - right border 
