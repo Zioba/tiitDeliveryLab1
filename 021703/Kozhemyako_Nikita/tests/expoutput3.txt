@@ -1,0 +1,8 @@
+Choose required operation with queue:
+1 - Add element to the queue
+2 - Extract from the queue
+3 - Output number of elements in the queue
+4 - Output the queue
+
+Enter the element
+Format of the element is incorrect

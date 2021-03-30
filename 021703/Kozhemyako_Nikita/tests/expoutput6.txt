@@ -1,0 +1,87 @@
+Choose required operation with queue:
+1 - Add element to the queue
+2 - Extract from the queue
+3 - Output number of elements in the queue
+4 - Output the queue
+
+View of the queue:
+Queue is empty!
+Choose required operation with queue:
+1 - Add element to the queue
+2 - Extract from the queue
+3 - Output number of elements in the queue
+4 - Output the queue
+
+Number of elements in the queue - 0
+Choose required operation with queue:
+1 - Add element to the queue
+2 - Extract from the queue
+3 - Output number of elements in the queue
+4 - Output the queue
+
+Enter the element
+10
+Choose required operation with queue:
+1 - Add element to the queue
+2 - Extract from the queue
+3 - Output number of elements in the queue
+4 - Output the queue
+
+View of the queue:
+10
+Choose required operation with queue:
+1 - Add element to the queue
+2 - Extract from the queue
+3 - Output number of elements in the queue
+4 - Output the queue
+
+Number of elements in the queue - 1
+Choose required operation with queue:
+1 - Add element to the queue
+2 - Extract from the queue
+3 - Output number of elements in the queue
+4 - Output the queue
+
+Enter the element
+20
+Choose required operation with queue:
+1 - Add element to the queue
+2 - Extract from the queue
+3 - Output number of elements in the queue
+4 - Output the queue
+
+View of the queue:
+10
+20
+Choose required operation with queue:
+1 - Add element to the queue
+2 - Extract from the queue
+3 - Output number of elements in the queue
+4 - Output the queue
+
+Number of elements in the queue - 2
+Choose required operation with queue:
+1 - Add element to the queue
+2 - Extract from the queue
+3 - Output number of elements in the queue
+4 - Output the queue
+
+Enter the element
+30
+Choose required operation with queue:
+1 - Add element to the queue
+2 - Extract from the queue
+3 - Output number of elements in the queue
+4 - Output the queue
+
+View of the queue:
+10
+20
+30
+Choose required operation with queue:
+1 - Add element to the queue
+2 - Extract from the queue
+3 - Output number of elements in the queue
+4 - Output the queue
+
+Number of elements in the queue - 3
