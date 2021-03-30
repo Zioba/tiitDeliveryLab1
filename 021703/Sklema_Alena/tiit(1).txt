@@ -1,0 +1,10 @@
+Test1: Adding elements to a set A
+9 12 24
+Test2: Removing an item from a set A
+9 12
+Test3: Adding elements to a set B
+1 2 3 9
+Test4: Combining sets A and B
+1 2 3 9 12
+Test5: Intersection of sets A and B
+9
