@@ -27,7 +27,8 @@ int main()
 			<< "(4) minimum" << endl
 			<< "(5) search the nearest less" << endl
 			<< "(6) search the nearest more" << endl
-			<< "(7) close the program" << endl;
+			<< "(7) print tree" << endl
+			<< "(8) close the program" << endl;
 		int i;
 		cin >> i;
 		switch (i)
@@ -83,9 +84,13 @@ int main()
 				cout << "the element: " << nmin << endl;
 			}
 			else cout << "doesn't exist" << endl;
-
+			break;
 
 		case 7:
+			tree.View();
+			break;
+
+		case 8:
 			return 0;
 			break;
 		}
