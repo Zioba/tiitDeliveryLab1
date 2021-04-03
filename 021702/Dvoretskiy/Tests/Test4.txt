@@ -1,0 +1,11 @@
+create
+9
+81 596 280 712 293 242 184 699 174 
+find_max
+3 8
+add
+6 8 435
+find_max
+5 8
+find_max
+1 2

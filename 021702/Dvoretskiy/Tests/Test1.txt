@@ -1,0 +1,13 @@
+create
+6
+5 12 403 422 108 88
+find_max
+0 5
+add
+3 5 103
+find_max
+0 5
+find_max
+0 1
+find_max
+4 5
