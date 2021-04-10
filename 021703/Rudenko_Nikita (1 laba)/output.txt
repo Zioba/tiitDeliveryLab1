@@ -1,0 +1,11 @@
+Tree 1 inorder output: 1 2 3 4 5 6 7 8 9 10 
+
+Delete 5: 1 2 3 4 6 7 8 9 10 
+
+Delete 11: 1 2 3 4 6 7 8 9 10 
+
+Tree 2 inorder output: 1 2 3 5 6 7 8 9 10 
+
+Tree 2 postorder output: 1 2 5 3 7 8 10 9 6 
+
+Tree 2 preorder output: 6 3 2 1 5 9 8 7 10	
