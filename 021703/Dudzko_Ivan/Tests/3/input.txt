@@ -1,0 +1,8 @@
+Size: 5 4 2
+
+Data:
+1337	228	66	34	
+
+
+Operation:
+error_remove 2 2

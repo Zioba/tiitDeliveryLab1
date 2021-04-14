@@ -1,0 +1,11 @@
+Size: 3 3 2 2
+
+Data:
+234	13	12	
+18	10	1	
+13	3	
+8	
+
+
+Operation:
+remove 2 2
