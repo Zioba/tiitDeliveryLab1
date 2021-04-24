@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "zy7qKZKw8SBbzkezGADbdX3pkMJQRoEUleCoDc1nQ+JnCMuYH/pmfhxDai8L4LImOx2Rmp5DLbCXhUGhG+UNrA==",
+  "success": true,
+  "projectFilePath": "D:\\Documents\\treap\\tiitDeliveryLab1\\021702\\Kosar\\Treaap\\Treaap.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anastasia\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\3.1.14\\microsoft.netcore.app.runtime.win-x86.3.1.14.nupkg.sha512",
+    "C:\\Users\\Anastasia\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\3.1.14\\microsoft.windowsdesktop.app.runtime.win-x86.3.1.14.nupkg.sha512",
+    "C:\\Users\\Anastasia\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\3.1.14\\microsoft.aspnetcore.app.runtime.win-x86.3.1.14.nupkg.sha512"
+  ],
+  "logs": []
+}
