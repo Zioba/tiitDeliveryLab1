@@ -1,8 +1,0 @@
-D:\Documents\treap\tiitDeliveryLab1\021702\Kosar\Treaap\bin\Debug\netcoreapp3.1\Treaap.deps.json
-D:\Documents\treap\tiitDeliveryLab1\021702\Kosar\Treaap\bin\Debug\netcoreapp3.1\Treaap.dll
-D:\Documents\treap\tiitDeliveryLab1\021702\Kosar\Treaap\bin\Debug\netcoreapp3.1\Treaap.pdb
-D:\Documents\treap\tiitDeliveryLab1\021702\Kosar\Treaap\obj\Debug\netcoreapp3.1\Treaap.AssemblyInfoInputs.cache
-D:\Documents\treap\tiitDeliveryLab1\021702\Kosar\Treaap\obj\Debug\netcoreapp3.1\Treaap.AssemblyInfo.cs
-D:\Documents\treap\tiitDeliveryLab1\021702\Kosar\Treaap\obj\Debug\netcoreapp3.1\Treaap.csproj.CoreCompileInputs.cache
-D:\Documents\treap\tiitDeliveryLab1\021702\Kosar\Treaap\obj\Debug\netcoreapp3.1\Treaap.dll
-D:\Documents\treap\tiitDeliveryLab1\021702\Kosar\Treaap\obj\Debug\netcoreapp3.1\Treaap.pdb
